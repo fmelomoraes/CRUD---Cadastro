@@ -1,10 +1,9 @@
 # CRUD---Cadastro
-Desenvolvendo uma aplicação onde fará o Cadastro Pessoal. 
+Cadastro Pessoal. 
 Coletando as seguintes informções: nome, email e data de nascimento.
 
 <hr>
-Como usar?
-<hr>
+##Como usar?
 
 
 Ao abir a tela:<br>
