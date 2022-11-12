@@ -1,8 +1,8 @@
 const modal = document.querySelector('.modal-container')
 const tbody = document.querySelector('tbody')
-const sNome = document.querySelector('#m-nome')
-const sFuncao = document.querySelector('#m-email')
-const sSalario = document.querySelector('#m-nasc')
+const sName = document.querySelector('#m-name')
+const sEmail = document.querySelector('#m-email')
+const sNasc = document.querySelector('#m-nasc')
 const btnSalvar = document.querySelector('#btnSalvar')
 
 let itens
@@ -18,14 +18,14 @@ function openModal(edit = false, index = 0) {
   }
 
   if (edit) {
-    sNome.value = itens[index].nome
-    sFuncao.value = itens[index].email
-    sSalario.value = itens[index].nasc
+    sName.value = itens[index].name
+    sEmail.value = itens[index].email
+    sNasc.value = itens[index].nasc
     id = index
   } else {
-    sNome.value = ''
-    sFuncao.value = ''
-    sSalario.value = ''
+    sName.value = ''
+    sEmail.value = ''
+    sNasc.value = ''
   }
 
 }
@@ -45,9 +45,9 @@ function insertItem(item, index) {
   let tr = document.createElement('tr')
 
   tr.innerHTML = `
-    <td>${item.nome}</td>
+    <td>${item.name}</td>
     <td>${item.email}</td>
-    <td>R$ ${item.nasc}</td>
+    <td>${item.nasc}</td>
     <td class="acao">
       <button onclick="editItem(${index})"><i class='bx bx-edit' ></i></button>
     </td>
@@ -60,18 +60,18 @@ function insertItem(item, index) {
 
 btnSalvar.onclick = e => {
 
-  if (sNome.value == '' || sEmail.value == '' || sNasc.value == '') {
+  if (sName.value == '' || sEmail.value == '' || sNasc.value == '') {
     return
   }
 
   e.preventDefault();
 
   if (id !== undefined) {
-    itens[id].nome = sNome.value
-    itens[id].funcao = sEmail.value
-    itens[id].salario = sNasc.value
+    itens[id].name = sName.value
+    itens[id].email = sEmail.value
+    itens[id].nasc = sNasc.value
   } else {
-    itens.push({ 'nome': sNome.value, 'funcao': sEmail.value, 'salario': sNasc.value })
+    itens.push({ 'name': sName.value, 'email': sEmail.value, 'nasc': sNasc.value })
   }
 
   setItensBD()

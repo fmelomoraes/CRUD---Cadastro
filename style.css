@@ -13,7 +13,10 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: rgba(0,0,0,0.1);
+
+  background-image: url(./madeira.jpg);
+ 
+
 }
 
 button {
@@ -24,7 +27,12 @@ button {
   width: 90%;
   height: 80%;
   border-radius: 10px;
-  background: white;
+}
+
+.container{
+  background-color: rgba(3, 3, 3, 0.6); 
+  box-shadow: 0 0 10px rgba(0,0,0,0.9);
+  -webkit-box-shadow: 0 0 30px rgba(184, 196, 26, 0.6);
 }
 
 .header {
@@ -39,6 +47,7 @@ button {
   font-weight: 900;
   font-size: 20px;
   word-break: break-all;
+  color: white;
 }
 
 #new {
@@ -55,6 +64,7 @@ button {
   width: auto; 
   height:inherit; 
   overflow:auto;
+  color: white;
 }
 
 .divTable::-webkit-scrollbar {
@@ -75,11 +85,11 @@ table {
 }
 
 thead {
-  background-color: whitesmoke;
+  background-color: rgb(3, 3, 3);
 }
 
 tr {
-  border-bottom: 1px solid rgb(238, 235, 235)!important;
+  border-bottom: 1px solid rgb(121, 119, 119)!important;
 }
 
 tbody tr td {

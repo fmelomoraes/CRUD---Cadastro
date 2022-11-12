@@ -5,15 +5,21 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Cadastro Pessoal</title>
   <link rel="stylesheet" href="style.css">
   <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+
 </head>
 
 <body>
+
   <div class="container">
+
     <div class="header">
+
       <span>Cadastro Pessoal</span>
+
       <button onclick="openModal()" id="new">Incluir</i></button>
     </div>
 
@@ -36,21 +42,31 @@
     <div class="modal-container">
       <div class="modal">
         <form>
-          <label for="m-nome">Nome</label>
-          <input id="m-nome" type="text" required />
+          <label for="m-name">Nome</label>
+          <input id="m-name" type="text" required />
 
           <label for="m-email">Email</label>
           <input id="m-email" type="text" required />
 
           <label for="m-nasc">Data de Nasc</label>
-          <input id="m-nasc" type="number" required />
+          <input id="m-nasc" type="datetime" required />
           <button id="btnSalvar">Salvar</button>
         </form>
+      </div>
+
+      <div>
+        <img src="./img/logo.png" width="50px">
       </div>
     </div>
 
   </div>
-  <script src="script.js"></script>
+  <script src="./script.js"></script>
+
+
 </body>
 
 </html>
+
+
+<tbody>
+</tbody>
