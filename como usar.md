@@ -3,7 +3,7 @@ Cadastro Pessoal.
 Coletando as seguintes informções: nome, email e data de nascimento.
 
 <hr>
-## Como usar?
+->> Como usar?
 
 
 Ao abir a tela:<br>
