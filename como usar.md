@@ -4,8 +4,8 @@ Coletando as seguintes informções: nome, email e data de nascimento.
 
 Como usar?
 
-Ao abir a tela: 
-1- clicar no menu "INCLUIR"
+Ao abir a tela:<br>
+1- clicar no menu "INCLUIR"<br>
 2- preencha as opções exigidas
 3- clique em "SALVAR"
 
