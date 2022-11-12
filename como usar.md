@@ -5,6 +5,7 @@ Coletando as seguintes informções: nome, email e data de nascimento.
 <hr>
 ->> Como usar?
 <br>
+<br>
 
 
 Ao abir a tela:<br>
