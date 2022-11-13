@@ -14,9 +14,12 @@ body {
   align-items: center;
   justify-content: center;
 
-  background-image: url(./madeira.jpg);
- 
+}
 
+body {
+  background-image: url(./madeira.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 button {
